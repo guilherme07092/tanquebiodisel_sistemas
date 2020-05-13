@@ -10,7 +10,7 @@ def postBiodiesel():
     global biodiesel
     var = data.get('biodiesel')
     biodiesel += var
-    print("Recebido de biodiesel: " + data.get('biodiesel'))
+    print(data.get('biodiesel'))
     response = {
         'biodiesel': biodiesel
     }
