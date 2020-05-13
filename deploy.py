@@ -1,5 +1,5 @@
 from flask import Flask, request
-import logging
+
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def postBiodiesel():
     global biodiesel
     var = data.get('biodiesel')
     biodiesel += var
-    logging.info(biodiesel)
+    print biodiesel
     response = {
         'biodiesel': biodiesel
     }
